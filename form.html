@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="w-100 h-75 bg-light d-flex align-items-center flex-column p-5">
+        <h1 class="text-primary text-center fw-bold ">facebook</h1>
+        <form class="card py-4 px-3 shadow-lg" style="width:400px">
+            <h5 class="text-center">Log in to Facebook</h5>
+            <div class="mb-3 p-2">
+                <input type="email" name="name" class="form-control p-2" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Enter address or phone number">
+            </div>
+            <div class="mb-3 p-2">
+                <input type="password" name="pass" class="form-control p-2" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <button onclick="getInput()" type="submit" class="btn btn-primary p-2 fw-bold fs-5">Log in</button>
+            <a class="text-center text-decoration-none py-3" href="">Forgotten password? Sign up for Facebook</a>
+        </form>
+    </div>
+    <div class="d-flex justify-content-center">
+        <div class="text-center  position-fixed bottom-0">
+        <p>English (UK)
+            বাংলা
+            हिन्दी
+            اردو
+            नेपाली
+            ଓଡ଼ିଆ
+            Español
+            Português (Brasil)
+            Français (France)
+            Deutsch
+            Italiano</p>
+            <p>
+                <hr>
+Sign UpLog inMessengerFacebook LiteVideoMeta PayMeta StoreMeta QuestRay-Ban MetaMeta AIInstagramThreads</p>
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+
+   <script>
+      function getInput(){
+        event.preventDefault()
+        const email = document.getElementById("exampleInputEmail1").value
+         console.log(email)
+      }
+   </script>
+</body>
+</html>
